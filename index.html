@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mozaic game. If that can be called a game anyway.</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="main-container">
+    <section class="toolbar">
+      <form class="form">
+        <fieldset class="fieldset">
+          <input class="input" type="color" id="border-color" value="#A5A5A5" />
+          <label class="label" for="border-color">Mosaic border color</label>
+          <input class="input input-fragment" type="color" id="fragment-color" value="#6BCDCC" />
+          <label class="label" for="fragment-color">Fragment background color</label>
+        </fieldset>
+        <button type="button" class="button">Generate New</button>
+      </form>
+    </section>
+    <main id="mosaic-root" class="mosaic-root"></main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
