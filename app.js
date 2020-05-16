@@ -27,7 +27,7 @@ const funnyRandom = (n, sum) => {
     do {
         const num = floor(random() * n) + 1;
         arrRes.push(num);
-        acc = arrRes.reduce((acc, el) => acc += el);
+        acc += num;
     } while (acc < sum - n);
     arrRes.push(sum - acc);
 
